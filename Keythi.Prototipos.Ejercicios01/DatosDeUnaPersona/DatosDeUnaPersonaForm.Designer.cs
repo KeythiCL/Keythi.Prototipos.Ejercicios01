@@ -37,11 +37,12 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(537, 99);
+            button1.Location = new Point(431, 99);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
@@ -114,11 +115,21 @@
             label4.TabIndex = 8;
             label4.Text = "Fecha de nacimiento";
             // 
+            // button2
+            // 
+            button2.Location = new Point(549, 99);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 9;
+            button2.Text = "Finalizar";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // DatosDeUnaPersonaForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(655, 140);
+            Controls.Add(button2);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -130,6 +141,7 @@
             Controls.Add(button1);
             Name = "DatosDeUnaPersonaForm";
             Text = "DatosDeUnaPersonaForm";
+            Load += DatosDeUnaPersonaForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -145,5 +157,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Button button2;
     }
 }
